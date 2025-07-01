@@ -1,0 +1,13 @@
+/* 
+ * ========================================
+ * GLOBAL STYLES
+ * ========================================
+ * This file defines all global styles such as the base structure and typograhpy
+ */
+
+@import '$lib/styles/tokens.css';
+@import '$lib/styles/typography.css';
+
+body {
+  background-color: var(--color-container-static-plain);
+}
