@@ -1,0 +1,97 @@
+{
+  "header": {
+    "nav-menu-1": "Über mich",
+    "nav-menu-2": "Projekte",
+    "nav-menu-3": "Mindspace",
+    "nav-menu-4": "Creative-Lab"
+  },
+  "home": {
+    "title": "UX-Portfolio | Nico Iseli",
+    "intro": {
+      "title": "Nico Iseli",
+      "description": "UX Enthusiast mit einer Leidenschaft, funktionale und begeisternde Produktlösungen zu schaffen"
+    },
+    "motif-1": {
+      "title": "Design erfordert Empathie",
+      "description": "Platzhalter Text"
+    },
+    "motif-2": {
+      "title": "Design erfordert Empathie",
+      "description": "Platzhalter Text"
+    },
+    "motif-3": {
+      "title": "Design erfordert Empathie",
+      "description": "Platzhalter Text"
+    },
+    "motif-4": {
+      "title": "Design erfordert Empathie",
+      "description": "Platzhalter Text"
+    },
+    "motif-5": {
+      "title": "Design erfordert Empathie",
+      "description": "Platzhalter Text"
+    }
+  },
+  "about":{
+    "title": "Über mich | Nico Iseli",
+    "intro": {
+      "title": "Über mich",
+      "description": "Diese Seite befindet sich aktuell in Entwicklung"
+    }
+  },
+  "projects":{
+    "title": "Projekte | Nico Iseli",
+    "intro": {
+      "title": "Projekte",
+      "description": "Diese Seite befindet sich aktuell in Entwicklung"
+    }
+  },
+  "mindspace":{
+    "title": "Mindspace | Nico Iseli",
+    "intro": {
+      "title": "Mindspace",
+      "description": "Diese Seite befindet sich aktuell in Entwicklung"
+    }
+  },
+  "lab":{
+    "title": "Creative-Lab | Nico Iseli",
+    "intro": {
+      "title": "Creative-Lab",
+      "description": "Diese Seite befindet sich aktuell in Entwicklung"
+    }
+  },
+  "footer":{
+    "pages": {
+      "title": "Seiten",
+      "home": "Startseite",
+      "about": "Über mich",
+      "projects": "Projekte",
+      "mindspace": "Mindspace",
+      "lab": "Creative-Lab"
+    },
+    "profiles": {    
+      "title": "Profile",
+      "linkedin": "LinkedIn",
+      "unsplash": "Unsplash",
+      "dribbble": "Dribbble",
+      "pinterest": "Pinterest",
+      "github": "GitHub"
+    },
+    "resources":{
+      "title": "Projekt Resourcen",
+      "vercel": "Vercel",
+      "vite": "Vite",
+      "i18next": "i18next",
+      "gsap": "GSAP",
+      "github": "GitHub"
+    },
+    "copyright": "Urheberrecht © 2025 Nico Iseli. Alle Rechte vorbehalten"
+  },
+  "error":{
+    "title": "Seite nicht gefunden | Nico Iseli",
+    "intro": {
+      "title": "Diese Seite existiert nicht",
+      "description": "Öffne gerne eine andere Seite in der Navigation"
+    }
+  }
+}
