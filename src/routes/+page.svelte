@@ -1,2 +1,17 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<!-- 
+=====================================================================
+  HOME
+=====================================================================
+  This file defines the Landing-Page of the project
+-->
+
+<script>
+	import { _ } from 'svelte-i18n';
+</script>
+
+<svelte:head>
+	<title>{$_('home.title')}</title>
+</svelte:head>
+
+<h1>{$_('home.intro.title')}</h1>
+<p>{$_('home.intro.description')}</p>
