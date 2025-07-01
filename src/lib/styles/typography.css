@@ -1,0 +1,133 @@
+/* 
+ * ========================================
+ * TYPOGRAPHY
+ * ========================================
+ * This file integrates and defines the typography for the project.
+ */
+
+@import './tokens.css';
+
+/* ==================================================
+   FONT-INTEGRATION
+================================================== */
+    @font-face {
+      font-family: "Inter";   
+      src: url('/fonts/Inter-Bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+  }
+  
+  @font-face {
+      font-family: "Inter";   
+      src: url('/fonts/Inter-SemiBold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+  }
+  
+  @font-face {
+      font-family: "Inter";   
+      src: url('/fonts/Inter-Medium.otf') format('opentype');
+      font-weight: 500;
+      font-style: normal;
+  }
+  
+  @font-face {
+      font-family: "Inter";   
+      src: url('/fonts/Inter-Regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+  }
+  
+/* ==================================================
+   TEXT-STYLE - HEADING
+================================================== */
+  .heading-xxl {
+      font-family: "Inter";
+      font-size: var(--measurement-fontsize-xxl);
+      font-weight: 700;
+      line-height: 120%;
+  }
+  
+  .heading-xl {
+      font-family: "Inter";
+      font-size: var(--measurement-fontsize-xl);
+      font-weight: 700;
+      line-height: 120%;
+  }
+  
+  .heading-l {
+      font-family: "Inter";
+      font-size: var(--measurement-fontsize-l);
+      font-weight: 600;
+      line-height: 120%;
+  }
+  
+  .heading-m {
+      font-family: "Inter";
+      font-size: var(--measurement-fontsize-m);
+      font-weight: 600;
+      line-height: 120%;
+  }
+  
+  .heading-s {
+      font-family: "Inter";
+      font-size: var(--measurement-fontsize-s);
+      font-weight: 600;
+      line-height: 120%;
+  }
+  
+  .heading-xs {
+      font-family: "Inter";
+      font-size: var(--measurement-fontsize-xs);
+      font-weight: 600;
+      line-height: 120%;
+  }
+  
+/* ==================================================
+   2. TEXT-STYLE - DETAIL
+================================================== */
+  .detail-m {
+      font-family: "Inter";
+      font-size: var(--measurement-fontsize-m);
+      font-weight: 500;
+      line-height: 100%;
+  }
+  
+  .detail-s {
+      font-family: "Inter";
+      font-size: var(--measurement-fontsize-s);
+      font-weight: 500;
+      line-height: 100%;
+  }
+  
+  .detail-xs {
+      font-family: "Inter";
+      font-size: var(--measurement-fontsize-xs);
+      font-weight: 500;
+      line-height: 100%;
+  }
+  
+/* ==================================================
+   2. TEXT-STYLE - BODY
+================================================== */
+  .body-m {
+      font-family: "Inter";
+      font-size: var(--measurement-fontsize-m);
+      font-weight: 400;
+      line-height: 150%;
+  }
+  
+  .body-s {
+      font-family: "Inter";
+      font-size: var(--measurement-fontsize-s);
+      font-weight: 400;
+      line-height: 150%;
+  }
+  
+  .body-xs {
+      font-family: "Inter";
+      font-size: var(--measurement-fontsize-xs);
+      font-weight: 400;
+      line-height: 150%;
+  }
+

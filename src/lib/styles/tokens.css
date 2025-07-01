@@ -1,0 +1,119 @@
+/* 
+ * ========================================
+ * TOKENS
+ * ========================================
+ * This file defines all semantic tokens used throughout the project. It maps base values (defined in `primitives.css`) to specific use cases.
+ */
+
+@import "./_primitives.css";
+
+/* ==================================================
+   COLORS
+================================================== */
+:root {
+  /* Container */
+  --color-container-static-plain: var(--color-grey-0);
+  --color-container-low: var(--color-grey-300);
+  --color-container-medium: var(--color-grey-600);
+  --color-container-strong: var(--color-grey-950);
+
+  /* Text */
+  --color-text-static-plain: var(--color-grey-0);
+  --color-text-static-low: var(--color-grey-500);
+  --color-text-static-medium: var(--color-grey-700);
+  --color-text-static-strong: var(--color-grey-950);
+
+  /* Shape */
+  --color-shape-static-plain: var(--color-grey-0);
+  --color-shape-static-low: var(--color-grey-300);
+  --color-shape-static-medium: var(--color-grey-600);
+  --color-shape-static-strong: var(--color-grey-950);
+
+  /* Border */
+  --color-border-static-plain: var(--color-grey-0);
+  --color-border-static-low: var(--color-grey-100);
+  --color-border-static-medium: var(--color-grey-300);
+  --color-border-static-strong: var(--color-grey-600);
+}
+
+[data-theme="dark"] {
+  /* Container */
+  --color-container-static-plain: var(--color-grey-950);
+  --color-container-static-low: var(--color-grey-600);
+  --color-container-static-medium: var(--color-grey-300);
+  --color-container-strong: var(--color-grey-0);
+
+  /* Text */
+  --color-text-static-plain: var(--color-grey-950);
+  --color-text-static-low: var(--color-grey-600);
+  --color-text-static-medium: var(--color-grey-300);
+  --color-text-static-strong: var(--color-grey-0);
+
+  /* Shape */
+  --color-shape-static-plain: var(--color-grey-950);
+  --color-shape-static-low: var(--color-grey-600);
+  --color-shape-static-medium: var(--color-grey-300);
+  --color-shape-static-strong: var(--color-grey-0);
+
+  /* Border */
+  --color-border-static-plain: var(--color-grey-950);
+  --color-border-static-low: var(--color-grey-800);
+  --color-border-static-medium: var(--color-grey-300);
+  --color-border-static-strong: var(--color-grey-0);
+}
+
+/* ==================================================
+   MEASUREMENTS
+================================================== */
+:root {
+  /* Spacing */
+  --measurement-spacing-none: var(--measurement-0);
+  --measurement-spacing-xxs: var(--measurement-2);
+  --measurement-spacing-xs: var(--measurement-4);
+  --measurement-spacing-s: var(--measurement-8);
+  --measurement-spacing-m: var(--measurement-16);
+  --measurement-spacing-l: var(--measurement-24);
+  --measurement-spacing-xl: var(--measurement-48);
+  --measurement-spacing-xxl: var(--measurement-96);
+
+  /* Icon Sizes */
+  --measurement-iconsize-xxs: var(--measurement-12);
+  --measurement-iconsize-xs: var(--measurement-14);
+  --measurement-iconsize-s: var(--measurement-16);
+  --measurement-iconsize-m: var(--measurement-20);
+  --measurement-iconsize-l: var(--measurement-24);
+  --measurement-iconsize-xl: var(--measurement-32);
+  --measurement-iconsize-xxl: var(--measurement-48);
+
+  /* Font Sizes */
+  --measurement-fontsize-xxs: var(--measurement-10);
+  --measurement-fontsize-xs: var(--measurement-12);
+  --measurement-fontsize-s: var(--measurement-14);
+  --measurement-fontsize-m: var(--measurement-16);
+  --measurement-fontsize-l: var(--measurement-24);
+  --measurement-fontsize-xl: var(--measurement-32);
+  --measurement-fontsize-xxl: var(--measurement-48);
+
+  /* Component Sizes */
+  --measurement-componentsize-xxs: var(--measurement-16);
+  --measurement-componentsize-xs: var(--measurement-24);
+  --measurement-componentsize-s: var(--measurement-32);
+  --measurement-componentsize-m: var(--measurement-40);
+  --measurement-componentsize-l: var(--measurement-48);
+  --measurement-componentsize-xl: var(--measurement-120);
+  --measurement-componentsize-xxl: var(--measurement-160);
+
+  /* Radius */
+  --measurement-radius-none: var(--measurement-0);
+  --measurement-radius-xxs: var(--measurement-2);
+  --measurement-radius-xs: var(--measurement-4);
+  --measurement-radius-s: var(--measurement-8);
+  --measurement-radius-m: var(--measurement-16);
+  --measurement-radius-l: var(--measurement-24);
+  --measurement-radius-xl: var(--measurement-32);
+  --measurement-radius-full: var(--measurement-9999);
+
+  /* Responsiveness */
+  --measurement-responsiveness-breakpoint: var(--measurement-800);
+  --measurement-responsiveness-maxcontentwidth: var(--measurement-960);
+}

@@ -1,0 +1,53 @@
+/* 
+ * ========================================
+ * PRIMITIVES
+ * ========================================
+ * This file defines all reusable base values used across the project. These base values are referenced in `tokens.css` via semantic tokens.
+ */
+ 
+ :root {
+    /* Colors */
+    --color-grey-950: #15161a;
+    --color-grey-900: #383D47;
+    --color-grey-800: #3D444F;
+    --color-grey-700: #464E5E;
+    --color-grey-600: #566073;
+    --color-grey-500: #6B788C;
+    --color-grey-400: #8A95A6;
+    --color-grey-300: #B3BAC6;
+    --color-grey-200: #D7DAE0;
+    --color-grey-100: #EDEEF1;
+    --color-grey-50: #F6F7F9;
+    --color-grey-20: #FBFCFD;
+    --color-grey-0: #FFFFFF;
+  
+    /* Measurements */
+    --measurement-0: 0px;
+    --measurement-2: 2px;
+    --measurement-4: 4px;
+    --measurement-6: 6px;
+    --measurement-8: 8px;
+    --measurement-10: 10px;
+    --measurement-12: 12px;
+    --measurement-14: 14px;
+    --measurement-16: 16px;
+    --measurement-20: 20px;
+    --measurement-24: 24px;
+    --measurement-32: 32px;
+    --measurement-40: 40px;
+    --measurement-48: 48px;
+    --measurement-56: 56px;
+    --measurement-64: 64px;
+    --measurement-72: 72px;
+    --measurement-80: 80px;
+    --measurement-96: 96px;
+    --measurement-120: 120px;
+    --measurement-160: 160px;
+    --measurement-240: 240px;
+    --measurement-320: 320px;
+    --measurement-480: 480px;
+    --measurement-640: 640px;
+    --measurement-800: 800px;
+    --measurement-960: 960px;
+    --measurement-9999: 9999px;
+  }
