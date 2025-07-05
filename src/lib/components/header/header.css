@@ -21,13 +21,15 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: var(--measurement-spacing-none) var(--measurement-spacing-m);
+  padding: var(--measurement-spacing-none) var(--measurement-spacing-s);
 
   /*Styling*/
   background-color: color-mix(in srgb, var(--color-container-static-plain) 80%, transparent);
   backdrop-filter: blur(8px);
 
   /*Animation*/
+  transition: height 0.4s ease;
+
 
   .header-content {
     /*Sizing*/
@@ -52,8 +54,23 @@ header {
       gap: var(--measurement-spacing-m);
 
       a {
+        /*Sizing*/
+        width: var(--measurement-componentsize-l);
+        height: var(--measurement-componentsize-l);
+
+        /*Layout*/
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
         svg {
-          fill: var(--color-shape-static-strong);
+          /*Sizing*/
+          width: var(--measurement-iconsize-m);
+          height: var(--measurement-iconsize-m);
+
+          /*Styling*/
+          fill: var(--color-shape-static-medium);
         }
       }
     }
@@ -69,7 +86,7 @@ header {
       align-items: center;
       gap: var(--measurement-spacing-m);
 
-      .desktop-nav {
+      .desktop-menu {
         /*Layout*/
         display: flex;
         flex-direction: row;
@@ -93,12 +110,15 @@ header {
       flex-direction: row;
       justify-content: end;
       align-items: center;
-      gap: var(--measurement-spacing-m);
+      gap: var(--measurement-spacing-none);
 
-      select{
+      select {
 
         /*Layout*/
         padding: var(--measurement-spacing-xs) var(--measurement-spacing-s);
+        margin-top: 8px;
+        margin-right: var(--measurement-spacing-xs);
+        margin-bottom: 8px;
 
         /*Styling*/
         appearance: none;
@@ -109,6 +129,17 @@ header {
       }
 
       button {
+
+        /*Sizing*/
+        width: var(--measurement-componentsize-l);
+        height: var(--measurement-componentsize-l);
+
+        /*Layout*/
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
         /*Styling*/
         border: none;
         background-color: transparent;
@@ -126,6 +157,15 @@ header {
           fill: var(--color-shape-static-medium);
         }
       }
+
+      .burger-menu {
+        /*Styling*/
+        display: none;
+      }
+    }
+
+    .mobile-menu {
+      display: none;
     }
   }
 }
@@ -135,14 +175,91 @@ header {
 ================================================== */
 @media (max-width: 800px) {
   header {
+
+    /*Animation*/
+    transition: height 0.4s ease;
+
     .header-content {
+
       .navigation {
+        display: none;
       }
 
       .actions {
+
         .burger-menu {
+
+          /*Layout*/
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .burger-icon {
+            /*Sizing*/
+            width: var(--measurement-iconsize-m);
+            height: var(--measurement-iconsize-m);
+
+            .line {
+              /*Sizing*/
+              position: relative;
+              width: 18px;
+              height: 1.5px;
+
+              /*Styling*/
+              position: relative;
+              background-color: var(--color-shape-static-medium);
+              border-radius: var(--measurement-radius-full);
+
+              /*Animation*/
+              transition: transform 0.3s ease, top 0.3s ease, opacity 0.3s ease;
+
+              &:first-child {
+                /*Layout*/
+                top: 6px;
+                left: 1px;
+              }
+
+              &:last-child {
+                /*Layout*/
+                top: 12px;
+                left: 1px;
+              }
+            }
+          }
+        }
+
+        .burger-menu.is-open {
+          .line {
+
+            &:first-child {
+              /*Layout*/
+              transform: rotate(45deg);
+              top: 9.6px;
+              left: 1px;
+            }
+
+            &:last-child {
+              /*Layout*/
+              transform: rotate(-45deg);
+              top: 8px;
+              left: 1px;
+            }
+          }
         }
       }
+    }
+  }
+
+  header.is-open {
+    /*Sizing*/
+    height: 100vh;
+
+    .mobile-menu {
+      /*Layout*/
+      transform: translateY(0);
+
+      /*Styling*/
+      opacity: 1;
     }
   }
 }

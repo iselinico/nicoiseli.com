@@ -15,6 +15,7 @@
 	// Initialize Variables
 	let currentLocale = 'en';
 	let currentTheme = 'light';
+	let isMenuOpen = false;
 
 	onMount(() => {
 		// Initialize Theme
@@ -39,6 +40,11 @@
 		locale.set(lang);
 		currentLocale = lang;
 	}
+
+	// Toggle Menu
+	function toggleMenu() {
+		isMenuOpen = !isMenuOpen;
+	}
 </script>
 
 <!--STYLES-->
@@ -61,7 +67,7 @@
 
 		<!-- Navigation -->
 		<div class="navigation">
-			<nav class="desktop-nav">
+			<nav class="desktop-menu">
             <a href="/about" class="body-s">{$_('header.nav-menu-1')}</a>
             <a href="/projects" class="body-s">{$_('header.nav-menu-2')}</a>
             <a href="/mindspace" class="body-s">{$_('header.nav-menu-3')}</a>
@@ -72,9 +78,9 @@
 		<!-- Action -->
 		<div class="actions">
 			<!-- Language -->
-			<select on:change={changeLanguage} bind:value={currentLocale} aria-label="Select Language">
-				<option value="en">en</option>
-				<option value="de">de</option>
+			<select class="detail-s" on:change={changeLanguage} bind:value={currentLocale} aria-label="Select Language">
+				<option class="detail-m" value="en">en</option>
+				<option class="detail-m" value="de">de</option>
 			</select>
 
 			<!-- Search -->
@@ -96,6 +102,25 @@
 					</svg>
 				{/if}
 			</button>
+
+			<!-- Burger Menu -->
+			 <button class="burger-menu" on:click={toggleMenu} aria-label="Toggle menu" class:is-open={isMenuOpen}>
+				<div class="burger-icon">
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+			</button>
+		</div>
+
+		<!-- Fullscreen Mobile Menu -->
+		<div class="mobile-menu">
+			<nav>
+				<a href="/about">{$_('header.nav-menu-1')}</a>
+				<a href="/projects">{$_('header.nav-menu-2')}</a>
+				<a href="/mindspace">{$_('header.nav-menu-3')}</a>
+				<a href="/creative-lab">{$_('header.nav-menu-4')}</a>
+			</nav>
 		</div>
 	</div>
 </header>
+
