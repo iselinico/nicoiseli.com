@@ -19,15 +19,15 @@
 
   /* Text */
   --color-text-static-plain: var(--color-grey-0);
-  --color-text-static-low: var(--color-grey-500);
+  --color-text-static-low: var(--color-grey-600);
   --color-text-static-medium: var(--color-grey-700);
   --color-text-static-strong: var(--color-grey-950);
 
   /* Shape */
   --color-shape-static-plain: var(--color-grey-0);
   --color-shape-static-low: var(--color-grey-300);
-  --color-shape-static-medium: var(--color-grey-600);
-  --color-shape-static-strong: var(--color-grey-950);
+  --color-shape-static-medium: var(--color-grey-500);
+  --color-shape-static-strong: var(--color-grey-900);
 
   /* Border */
   --color-border-static-plain: var(--color-grey-0);
@@ -46,20 +46,20 @@
   /* Text */
   --color-text-static-plain: var(--color-grey-950);
   --color-text-static-low: var(--color-grey-600);
-  --color-text-static-medium: var(--color-grey-300);
-  --color-text-static-strong: var(--color-grey-0);
+  --color-text-static-medium: var(--color-grey-400);
+  --color-text-static-strong: var(--color-grey-50);
 
   /* Shape */
   --color-shape-static-plain: var(--color-grey-950);
   --color-shape-static-low: var(--color-grey-600);
   --color-shape-static-medium: var(--color-grey-300);
-  --color-shape-static-strong: var(--color-grey-0);
+  --color-shape-static-strong: var(--color-grey-50);
 
   /* Border */
   --color-border-static-plain: var(--color-grey-950);
   --color-border-static-low: var(--color-grey-800);
   --color-border-static-medium: var(--color-grey-300);
-  --color-border-static-strong: var(--color-grey-0);
+  --color-border-static-strong: var(--color-grey-50);
 }
 
 /* ==================================================
@@ -90,7 +90,7 @@
   --measurement-fontsize-xs: var(--measurement-12);
   --measurement-fontsize-s: var(--measurement-14);
   --measurement-fontsize-m: var(--measurement-16);
-  --measurement-fontsize-l: var(--measurement-24);
+  --measurement-fontsize-l: var(--measurement-20);
   --measurement-fontsize-xl: var(--measurement-32);
   --measurement-fontsize-xxl: var(--measurement-48);
 
