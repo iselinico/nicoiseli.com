@@ -17,7 +17,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: var(--measurement-spacing-none) var(--measurement-spacing-l);
+    padding: var(--measurement-spacing-none) var(--measurement-spacing-m);
 
     .footer-content {
         /*Sizing*/
@@ -121,14 +121,15 @@ footer {
             .footer-info {
                 /*Layout*/
                 flex-direction: column;
-                gap: var(--measurement-spacing-xl);
+                gap: var(--measurement-spacing-l);
                 padding: var(--measurement-spacing-l) var(--measurement-spacing-none);
 
 
                 .footer-nav {
                     /*Layout*/
                     flex-direction: column;
-                    gap: var(--measurement-spacing-xl);
+                    gap: var(--measurement-spacing-l);
+                    padding-top: var(--measurement-spacing-m);
 
                     .nav-column {
                         /*Layout*/

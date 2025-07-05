@@ -53,7 +53,6 @@ html {
       flex-direction: column;
       align-items: center;
       overflow-y: visible;
-      padding: var(--measurement-spacing-none) var(--measurement-spacing-m);
 
       .main-content {
         /*Sizing*/
@@ -64,7 +63,7 @@ html {
         /*Layout*/
         display: flex;
         flex-direction: column;
-        padding: var(--measurement-spacing-xxl) var(--measurement-spacing-none);
+        padding: var(--measurement-spacing-xxl) var(--measurement-spacing-m);
       }
     }
   }
