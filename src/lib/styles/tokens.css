@@ -13,40 +13,40 @@
 :root {
   /* Container */
   --color-container-static-plain: var(--color-grey-0);
-  --color-container-low: var(--color-grey-300);
-  --color-container-medium: var(--color-grey-600);
+  --color-container-low: var(--color-grey-50);
+  --color-container-medium: var(--color-grey-200);
   --color-container-strong: var(--color-grey-950);
 
   /* Text */
   --color-text-static-plain: var(--color-grey-0);
   --color-text-static-low: var(--color-grey-600);
-  --color-text-static-medium: var(--color-grey-700);
+  --color-text-static-medium: var(--color-grey-800);
   --color-text-static-strong: var(--color-grey-950);
 
   /* Shape */
   --color-shape-static-plain: var(--color-grey-0);
-  --color-shape-static-low: var(--color-grey-300);
-  --color-shape-static-medium: var(--color-grey-500);
-  --color-shape-static-strong: var(--color-grey-900);
+  --color-shape-static-low: var(--color-grey-600);
+  --color-shape-static-medium: var(--color-grey-800);
+  --color-shape-static-strong: var(--color-grey-950);
 
   /* Border */
   --color-border-static-plain: var(--color-grey-0);
-  --color-border-static-low: var(--color-grey-100);
-  --color-border-static-medium: var(--color-grey-300);
+  --color-border-static-low: var(--color-grey-200);
+  --color-border-static-medium: var(--color-grey-400);
   --color-border-static-strong: var(--color-grey-600);
 }
 
 [data-theme="dark"] {
   /* Container */
   --color-container-static-plain: var(--color-grey-950);
-  --color-container-static-low: var(--color-grey-600);
-  --color-container-static-medium: var(--color-grey-300);
-  --color-container-strong: var(--color-grey-0);
+  --color-container-static-low: var(--color-grey-900);
+  --color-container-static-medium: var(--color-grey-700);
+  --color-container-strong: var(--color-grey-50);
 
   /* Text */
   --color-text-static-plain: var(--color-grey-950);
   --color-text-static-low: var(--color-grey-600);
-  --color-text-static-medium: var(--color-grey-400);
+  --color-text-static-medium: var(--color-grey-300);
   --color-text-static-strong: var(--color-grey-50);
 
   /* Shape */
@@ -57,9 +57,9 @@
 
   /* Border */
   --color-border-static-plain: var(--color-grey-950);
-  --color-border-static-low: var(--color-grey-800);
-  --color-border-static-medium: var(--color-grey-300);
-  --color-border-static-strong: var(--color-grey-50);
+  --color-border-static-low: var(--color-grey-700);
+  --color-border-static-medium: var(--color-grey-500);
+  --color-border-static-strong: var(--color-grey-300);
 }
 
 /* ==================================================
@@ -100,8 +100,8 @@
   --measurement-componentsize-s: var(--measurement-32);
   --measurement-componentsize-m: var(--measurement-40);
   --measurement-componentsize-l: var(--measurement-48);
-  --measurement-componentsize-xl: var(--measurement-120);
-  --measurement-componentsize-xxl: var(--measurement-160);
+  --measurement-componentsize-xl: var(--measurement-64);
+  --measurement-componentsize-xxl: var(--measurement-80);
 
   /* Radius */
   --measurement-radius-none: var(--measurement-0);
