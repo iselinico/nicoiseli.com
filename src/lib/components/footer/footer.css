@@ -1,0 +1,152 @@
+/* 
+ * ========================================
+ * FOOTER
+ * ========================================
+ * This file defines the styles of the Footer-Component
+ */
+
+/* ==================================================
+   DESKTOP
+================================================== */
+footer {
+    /*Sizing*/
+    width: 100%;
+    flex-shrink: 0;
+
+    /*Layout*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: var(--measurement-spacing-none) var(--measurement-spacing-l);
+
+    .footer-content {
+        /*Sizing*/
+        width: 100%;
+        max-width: var(--measurement-responsiveness-maxcontentwidth);
+
+        /*Layout*/
+        display: flex;
+        flex-direction: column;
+
+        .footer-info {
+            /*Layout*/
+            display: flex;
+            flex-direction: row;
+            gap: var(--measurement-spacing-m);
+            padding: var(--measurement-spacing-xl) var(--measurement-spacing-none);
+
+            /*Styling*/
+            border-top: 1px solid var(--color-border-static-low);
+
+            .profile {
+                /*Sizing*/
+                flex: 1;
+
+                /*Layout*/
+                display: flex;
+                flex-direction: column;
+                gap: var(--measurement-spacing-m);
+
+                .personal-info {
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        /*Styling*/
+                        color: var(--color-text-static-medium);
+                    }
+                }
+            }
+
+            .footer-nav {
+                /*Sizing*/
+                flex: 1;
+
+                /*Layout*/
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .nav-column {
+                    /*Layout*/
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--measurement-spacing-m);
+
+                    ul {
+                        /*Styling*/
+                        list-style: none;
+
+                        li {
+                            /*Sizing*/
+                            height: var(--measurement-componentsize-s);
+
+                            &:hover {
+                                /*Styling*/
+                                cursor: pointer;
+                            }
+
+                            a {
+                                /*Styling*/
+                                text-decoration: underline;
+                                color: var(--color-text-static-medium);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .legal {
+            /*Layout*/
+            padding: var(--measurement-spacing-m) var(--measurement-spacing-none);
+
+            /*Styling*/
+            border-top: 1px solid var(--color-border-static-low);
+
+            .copyright {
+                /*Styling*/
+                color: var(--color-text-static-medium);
+            }
+        }
+    }
+}
+
+/* ==================================================
+   MOBILE
+================================================== */
+@media (max-width: 800px) {
+    footer {
+        .footer-content {
+            .footer-info {
+                /*Layout*/
+                flex-direction: column;
+                gap: var(--measurement-spacing-xl);
+                padding: var(--measurement-spacing-l) var(--measurement-spacing-none);
+
+
+                .footer-nav {
+                    /*Layout*/
+                    flex-direction: column;
+                    gap: var(--measurement-spacing-xl);
+
+                    .nav-column {
+                        /*Layout*/
+                        gap: var(--measurement-spacing-xs);
+
+                        ul {
+                            li {
+                                /*Sizing*/
+                                height: var(--measurement-componentsize-xs);
+                            }
+                        }
+                    }
+
+                    .resources {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
