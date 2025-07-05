@@ -61,6 +61,10 @@
     }
   },
   "footer":{
+    "personal-info": {
+      "name": "Nico Iseli",
+      "job": "UX Designer @finpension"
+    },
     "pages": {
       "title": "Seiten",
       "home": "Startseite",
@@ -71,19 +75,19 @@
     },
     "profiles": {    
       "title": "Profile",
-      "linkedin": "LinkedIn",
-      "unsplash": "Unsplash",
       "dribbble": "Dribbble",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
       "pinterest": "Pinterest",
-      "github": "GitHub"
+      "unsplash": "Unsplash"
     },
     "resources":{
-      "title": "Projekt Resourcen",
-      "vercel": "Vercel",
-      "vite": "Vite",
-      "i18next": "i18next",
+      "title": "Resourcen",
+      "github": "GitHub",
       "gsap": "GSAP",
-      "github": "GitHub"
+      "i18next": "i18next",
+      "svelte": "Svelte",
+      "vercel": "Vercel"
     },
     "copyright": "Urheberrecht © 2025 Nico Iseli. Alle Rechte vorbehalten"
   },
