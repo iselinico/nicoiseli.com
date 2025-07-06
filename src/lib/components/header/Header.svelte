@@ -7,7 +7,7 @@
 
 <!--SCRIPTS-->
 <script>
-	import { onMount } from 'svelte';
+	import { onMount, tick } from 'svelte';
 	import { get } from 'svelte/store';
 	import { theme } from '$lib/stores/theme.js';
 	import { locale, _ } from 'svelte-i18n';
@@ -15,7 +15,18 @@
 	// Initialize Variables
 	let currentLocale = 'en';
 	let currentTheme = 'light';
+	let isSearchOpen = false;
+	let searchInput;
+	let searchQuery = '';
 	let isMenuOpen = false;
+
+	// Navigation Items
+	const navItems = [
+		{ key: 'header.nav.menu-1', href: '/about' },
+		{ key: 'header.nav.menu-2', href: '/projects' },
+		{ key: 'header.nav.menu-3', href: '/mindspace' },
+		{ key: 'header.nav.menu-4', href: '/creative-lab' }
+	];
 
 	onMount(() => {
 		// Initialize Theme
@@ -41,9 +52,28 @@
 		currentLocale = lang;
 	}
 
+	// Open Search
+	function openSearch() {
+		isSearchOpen = true;
+
+		tick().then(() => {
+			searchInput?.focus();
+		});
+	}
+
+	// Clear Search Input
+	function clearSearchInput() {
+		searchQuery = '';
+		searchInput?.focus();
+	}
+
 	// Toggle Menu
 	function toggleMenu() {
-		isMenuOpen = !isMenuOpen;
+		if (isSearchOpen) {
+			isSearchOpen = false;
+		} else {
+			isMenuOpen = !isMenuOpen;
+		}
 	}
 </script>
 
@@ -52,7 +82,7 @@
 	@import './header.css';
 </style>
 
-<header>
+<header class:is-menu-open={isMenuOpen} class:is-search-open={isSearchOpen}>
 	<div class="header-content">
 		<!-- Home -->
 		<div class="home">
@@ -68,30 +98,30 @@
 		<!-- Navigation -->
 		<div class="navigation">
 			<nav class="desktop-menu">
-            <a href="/about" class="body-s">{$_('header.nav-menu-1')}</a>
-            <a href="/projects" class="body-s">{$_('header.nav-menu-2')}</a>
-            <a href="/mindspace" class="body-s">{$_('header.nav-menu-3')}</a>
-            <a href="/creative-lab" class="body-s">{$_('header.nav-menu-4')}</a>
+            <a href="/about" class="body-s">{$_('header.nav.menu-1')}</a>
+            <a href="/projects" class="body-s">{$_('header.nav.menu-2')}</a>
+            <a href="/mindspace" class="body-s">{$_('header.nav.menu-3')}</a>
+            <a href="/creative-lab" class="body-s">{$_('header.nav.menu-4')}</a>
           </nav>
 		</div>
 
 		<!-- Action -->
 		<div class="actions">
 			<!-- Language -->
-			<select class="detail-s" on:change={changeLanguage} bind:value={currentLocale} aria-label="Select Language">
+			<select class="detail-s locale" on:change={changeLanguage} bind:value={currentLocale} aria-label="Select Language">
 				<option class="detail-m" value="en">en</option>
 				<option class="detail-m" value="de">de</option>
 			</select>
 
 			<!-- Search -->
-			<button aria-label="Search">
+			<button class ="search" on:click={openSearch} aria-label="Search">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
 					<path fill-rule="evenodd" d="M11.5 3.75a7.75 7.75 0 1 0 5.379 13.33.755.755 0 0 1 .2-.201A7.75 7.75 0 0 0 11.5 3.75Zm7.05 13.739a9.213 9.213 0 0 0 2.2-5.989 9.25 9.25 0 1 0-3.261 7.05l2.98 2.98a.75.75 0 1 0 1.061-1.06l-2.98-2.981Z" clip-rule="evenodd"/>
 				</svg>
 			</button>
 
 			<!-- Theme -->
-			<button on:click={changeTheme} aria-label="Toggle Dark/Light Mode">
+			<button class="theme" on:click={changeTheme} aria-label="Toggle Dark/Light Mode">
 				{#if currentTheme === 'light'}
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
 						<path fill-rule="evenodd" d="M8.686 1.47a.75.75 0 0 1 .153.84 9.675 9.675 0 0 0-.858 3.997c0 5.364 4.348 9.712 9.713 9.712a9.672 9.672 0 0 0 3.997-.858.75.75 0 0 1 .992.992 11.214 11.214 0 0 1-10.22 6.597C6.27 22.75 1.25 17.73 1.25 11.538c0-4.549 2.708-8.463 6.597-10.221a.75.75 0 0 1 .84.153ZM6.8 3.647a9.7 9.7 0 0 0-4.049 7.89c0 5.365 4.348 9.713 9.712 9.713a9.7 9.7 0 0 0 7.891-4.049c-.853.208-1.744.318-2.66.318-6.192 0-11.212-5.02-11.212-11.212 0-.916.11-1.807.318-2.66Z" clip-rule="evenodd"/>
@@ -104,7 +134,7 @@
 			</button>
 
 			<!-- Burger Menu -->
-			 <button class="burger-menu" on:click={toggleMenu} aria-label="Toggle menu" class:is-open={isMenuOpen}>
+			 <button class="burger-menu" on:click={toggleMenu} aria-label="Toggle menu" class:is-menu-open={isMenuOpen} class:is-search-open={isSearchOpen}>
 				<div class="burger-icon">
 					<div class="line"></div>
 					<div class="line"></div>
@@ -112,15 +142,68 @@
 			</button>
 		</div>
 
-		<!-- Fullscreen Mobile Menu -->
-		<div class="mobile-menu">
-			<nav>
-				<a href="/about">{$_('header.nav-menu-1')}</a>
-				<a href="/projects">{$_('header.nav-menu-2')}</a>
-				<a href="/mindspace">{$_('header.nav-menu-3')}</a>
-				<a href="/creative-lab">{$_('header.nav-menu-4')}</a>
-			</nav>
-		</div>
+		<!-- Search Menu -->
+		{#if isSearchOpen}
+			<div class="search-menu">
+				<div class="search-menu-content">
+					<div class="search-wrapper">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+							<path fill-rule="evenodd" d="M11.5 3.75a7.75 7.75 0 1 0 5.379 13.33.755.755 0 0 1 .2-.201A7.75 7.75 0 0 0 11.5 3.75Zm7.05 13.739a9.213 9.213 0 0 0 2.2-5.989 9.25 9.25 0 1 0-3.261 7.05l2.98 2.98a.75.75 0 1 0 1.061-1.06l-2.98-2.981Z" clip-rule="evenodd"/>
+						</svg>
+						<input type="text" class=" heading-l search-input" bind:this={searchInput} bind:value={searchQuery} placeholder="{$_('header.search.placeholder')}">
+						{#if searchQuery !== ''}
+							<button class="clear-search-input" on:click={clearSearchInput} aria-label="Clear Search">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" fill="currentColor" viewBox="0 0 25 24">
+									<path fill-rule="evenodd" d="M1.662 12c0-6.075 4.925-11 11-11s11 4.925 11 11-4.925 11-11 11-11-4.925-11-11Zm7.293-3.707a1 1 0 0 1 1.414 0l2.293 2.293 2.293-2.293a1 1 0 1 1 1.414 1.414L14.076 12l2.293 2.293a1 1 0 0 1-1.414 1.414l-2.293-2.293-2.293 2.293a1 1 0 0 1-1.414-1.414L11.248 12 8.955 9.707a1 1 0 0 1 0-1.414Z" clip-rule="evenodd"/>
+								</svg>
+							</button>
+						{/if}
+					</div>
+					<div class="search-results">
+						{#if searchQuery === ''}
+							<!-- Empty Query -->
+							<p class="body-s search-result-title">{$_('header.search.quickstart')}</p>
+							<nav>
+								{#each navItems as item, i}
+									<div class="quickstart-item">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+											<path fill-rule="evenodd" d="M13.47 5.47a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H4a.75.75 0 0 1 0-1.5h14.19l-4.72-4.72a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+										</svg>
+										<a
+											href={item.href}
+											class="heading-m"
+											on:click={toggleMenu}
+										>
+											{$_(item.key)}
+										</a>
+									</div>
+								{/each}
+							</nav>
+						{:else}
+							<!-- Filled Query -->
+							<p class="body-s search-result-title">{$_('header.search.no-results')}</p>
+						{/if}
+					</div>
+				</div>
+			</div>
+		{/if} 
+
+		<!-- Mobile Menu -->
+		{#if isMenuOpen}
+			<div class="mobile-menu">
+				<nav>
+					{#each navItems as item, i}
+						<a
+							href={item.href}
+							class="heading-l"
+							on:click={toggleMenu}
+						>
+							{$_(item.key)}
+						</a>
+					{/each}
+				</nav>
+			</div>
+		{/if} 
 	</div>
 </header>
 
