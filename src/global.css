@@ -26,8 +26,8 @@
 ================================================== */
 html {
   /*Sizing*/
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 
   /*Styling*/
   background-color: var(--color-container-static-plain);
@@ -46,24 +46,35 @@ html {
       /*Sizing*/
       width: 100%;
       flex: 1;
-      margin-top: var(--measurement-componentsize-l);
 
       /*Layout*/
       display: flex;
       flex-direction: column;
-      align-items: center;
-      overflow-y: visible;
 
-      .main-content {
+      .main-wrapper {
         /*Sizing*/
         width: 100%;
         flex-grow: 1;
-        max-width: var(--measurement-responsiveness-maxcontentwidth);
+        margin-top: var(--measurement-componentsize-l);
 
         /*Layout*/
         display: flex;
         flex-direction: column;
-        padding: var(--measurement-spacing-xxl) var(--measurement-spacing-m);
+        align-items: center;
+        overflow-y: visible;
+        padding: var(--measurement-spacing-none) var(--measurement-spacing-m);
+
+        .main-content {
+          /*Sizing*/
+          width: 100%;
+          max-width: var(--measurement-responsiveness-maxcontentwidth);
+
+          /*Layout*/
+          display: flex;
+          flex-direction: column;
+          padding: var(--measurement-spacing-xxl) var(--measurement-spacing-none);
+        }
+
       }
     }
   }
