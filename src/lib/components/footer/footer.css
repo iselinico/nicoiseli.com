@@ -115,7 +115,7 @@ footer {
 /* ==================================================
    MOBILE
 ================================================== */
-@media (max-width: 800px) {
+@media (max-width: 960px) {
     footer {
         .footer-content {
             .footer-info {
