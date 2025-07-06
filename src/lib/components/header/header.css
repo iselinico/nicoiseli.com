@@ -114,6 +114,7 @@ header {
         margin-right: var(--measurement-spacing-s);
 
         /*Styling*/
+        appearance: none;
         color: var(--color-text-static-medium);
         background-color: var(--color-container-static-plain);
         border-radius: var(--measurement-radius-s);
@@ -270,7 +271,6 @@ header {
             width: 100%;
 
             /*Styling*/
-            appearance: none;
             border: none;
             color: var(--color-text-static-strong);
 
