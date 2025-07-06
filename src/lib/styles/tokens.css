@@ -41,13 +41,13 @@
   --color-container-static-plain: var(--color-grey-950);
   --color-container-static-low: var(--color-grey-900);
   --color-container-static-medium: var(--color-grey-700);
-  --color-container-strong: var(--color-grey-50);
+  --color-container-strong: var(--color-grey-0);
 
   /* Text */
   --color-text-static-plain: var(--color-grey-950);
   --color-text-static-low: var(--color-grey-600);
   --color-text-static-medium: var(--color-grey-300);
-  --color-text-static-strong: var(--color-grey-50);
+  --color-text-static-strong: var(--color-grey-100);
 
   /* Shape */
   --color-shape-static-plain: var(--color-grey-950);
