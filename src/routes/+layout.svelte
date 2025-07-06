@@ -20,8 +20,10 @@
 <!--MARKUP-->
 <Header />
 <main>
-	<div class="main-content">
-		<slot />
+	<div class="main-wrapper">
+		<div class="main-content">
+			<slot />
+		</div>
 	</div>
 	<Footer />
 </main>
