@@ -1,10 +1,18 @@
 {
   "header": {
-    "nav-menu-1": "About",
-    "nav-menu-2": "Projects",
-    "nav-menu-3": "Mindspace",
-    "nav-menu-4": "Creative-Lab"
-  },
+		"nav": {
+			"menu-1": "About",
+			"menu-2": "Projects",
+			"menu-3": "Mindspace",
+			"menu-4": "Creative-Lab"
+		},
+		"search": {
+			"placeholder": "Search",
+			"quickstart": "Quickstart",
+      "results": "Search Results",
+      "no-results": "No results found"
+		}
+	},
   "home": {
     "title": "UX-Portfolio | Nico Iseli",
     "intro": {
