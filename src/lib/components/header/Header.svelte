@@ -78,7 +78,7 @@
 </script>
 
 <!--STYLES-->
-<style global>
+<style>
 	@import './header.css';
 </style>
 
