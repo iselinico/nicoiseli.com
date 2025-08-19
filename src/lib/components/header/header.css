@@ -25,6 +25,7 @@ header {
   /*Styling*/
   background-color: color-mix(in srgb, var(--color-container-static-plain) 80%, transparent);
   backdrop-filter: blur(8px);
+  box-shadow: 0 2px 160px rgba(var(--color-shadow-static-strong), 0.08);
 
   .header-content {
     /*Sizing*/
