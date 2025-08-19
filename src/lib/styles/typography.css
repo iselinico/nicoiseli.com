@@ -44,14 +44,14 @@
   .heading-xxl {
       font-family: "Inter";
       font-size: var(--measurement-fontsize-xxl);
-      font-weight: 700;
+      font-weight: 600;
       line-height: 120%;
   }
   
   .heading-xl {
       font-family: "Inter";
       font-size: var(--measurement-fontsize-xl);
-      font-weight: 700;
+      font-weight: 600;
       line-height: 120%;
   }
   
