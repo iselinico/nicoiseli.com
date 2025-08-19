@@ -73,6 +73,7 @@ html {
           display: flex;
           flex-direction: column;
           padding: var(--measurement-spacing-xxl) var(--measurement-spacing-none);
+          gap: var(--measurement-spacing-xxl);
         }
 
       }
