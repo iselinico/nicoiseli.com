@@ -34,6 +34,9 @@
   --color-border-static-low: var(--color-grey-200);
   --color-border-static-medium: var(--color-grey-400);
   --color-border-static-strong: var(--color-grey-600);
+
+  /* Shadow */
+  --color-shadow-static-strong: 0, 0, 0;
 }
 
 [data-theme="dark"] {
@@ -45,9 +48,9 @@
 
   /* Text */
   --color-text-static-plain: var(--color-grey-950);
-  --color-text-static-low: var(--color-grey-600);
-  --color-text-static-medium: var(--color-grey-300);
-  --color-text-static-strong: var(--color-grey-100);
+  --color-text-static-low: var(--color-grey-300);
+  --color-text-static-medium: var(--color-grey-100);
+  --color-text-static-strong: var(--color-grey-50);
 
   /* Shape */
   --color-shape-static-plain: var(--color-grey-950);
@@ -60,6 +63,9 @@
   --color-border-static-low: var(--color-grey-700);
   --color-border-static-medium: var(--color-grey-500);
   --color-border-static-strong: var(--color-grey-300);
+
+  /* Shadow */
+  --color-shadow-static-strong: 255, 255, 255;
 }
 
 /* ==================================================
