@@ -1,5 +1,5 @@
 {
-  "header": {
+	"header": {
 		"nav": {
 			"menu-1": "About",
 			"menu-2": "Projects",
@@ -9,101 +9,266 @@
 		"search": {
 			"placeholder": "Search",
 			"quickstart": "Quickstart",
-      "results": "Search Results",
-      "no-results": "No results found"
+			"results": "Search Results",
+			"no-results": "No results found"
 		}
 	},
-  "home": {
-    "title": "UX-Portfolio | Nico Iseli",
-    "intro": {
-      "title": "Nico Iseli",
-      "description": "UX Enthusiast with a passion for creating useful and engaging product solutions"
-    },
-    "motif-1": {
-      "title": "Design requires Empathy",
-      "description": "Placeholder Text"
-    },
-    "motif-2": {
-      "title": "Design requires Domain Knowledge",
-      "description": "Placeholder Text"
-    },
-    "motif-3": {
-      "title": "Design requires Context",
-      "description": "Placeholder Text"
-    },
-    "motif-4": {
-      "title": "Design requires Creativity",
-      "description": "Placeholder Text"
-    },
-    "motif-5": {
-      "title": "Design requires Strategy",
-      "description": "Placeholder Text"
-    }
-  },
-  "about": {
-    "title": "About | Nico Iseli",
-    "intro": {
-      "title": "About",
-      "description": "This page is currently under development"
-    }
-  },
-  "projects": {
-    "title": "Projects | Nico Iseli",
-    "intro": {
-      "title": "Projects",
-      "description": "This page is currently under development"
-    }
-  },
-  "mindspace": {
-    "title": "Mindspace | Nico Iseli",
-    "intro": {
-      "title": "Mindspace",
-      "description": "This page is currently under development"
-    }
-  },
-  "lab": {
-    "title": "Creative-Lab | Nico Iseli",
-    "intro": {
-      "title": "Creative-Lab",
-      "description": "This page is currently under development"
-    }
-  },
-  "footer":{
-    "personal-info": {
-      "name": "Nico Iseli",
-      "job": "UX Designer @finpension"
-    },
-    "pages": {
-      "title": "Pages",
-      "home": "Home",
-      "about": "About",
-      "projects": "Projects",
-      "mindspace": "Mindspace",
-      "lab": "Creative-Lab"
-    },
-    "profiles": {    
-      "title": "Profiles",
-      "dribbble": "Dribbble",
-      "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "pinterest": "Pinterest",
-      "unsplash": "Unsplash"
-    },
-    "resources":{
-      "title": "Resources",
-      "github": "GitHub",
-      "gsap": "GSAP",
-      "i18next": "i18next",
-      "svelte": "Svelte",
-      "vercel": "Vercel"
-    },
-    "copyright": "Copyright © 2025 Nico Iseli. All rights reserved."
-  },
-  "error": {
-    "title": "Page Not Found | Nico Iseli",
-    "intro": {
-      "title": "This page does not exist",
-      "description": "Feel free to open another page from the navigation"
-    }
-  }
+	"home": {
+		"title": "UX-Portfolio | Nico Iseli",
+		"intro": {
+			"title": "Nico Iseli",
+			"description": "UX Enthusiast with a passion for creating useful and engaging product solutions"
+		},
+		"motif-1": {
+			"title": "Design requires Empathy",
+			"description": "Placeholder Text"
+		},
+		"motif-2": {
+			"title": "Design requires Domain Knowledge",
+			"description": "Placeholder Text"
+		},
+		"motif-3": {
+			"title": "Design requires Context",
+			"description": "Placeholder Text"
+		},
+		"motif-4": {
+			"title": "Design requires Creativity",
+			"description": "Placeholder Text"
+		},
+		"motif-5": {
+			"title": "Design requires Strategy",
+			"description": "Placeholder Text"
+		}
+	},
+	"about": {
+		"title": "About | Nico Iseli",
+		"intro": {
+			"title": "About",
+			"description": "I have always had a passion for creating things. During my studies in computer science, and especially through my major in Human Computer Interaction Design, a great interest in UX arose in me. What I particularly like about this area is the interplay of different disciplines such as design, technology, psychology, communication and so on. That‘s why I decided to pursue a career in this field and I am extremely motivated to help shape the digital future.",
+			"education": {
+				"title": "Education",
+				"entries": [
+					{
+						"duration": "Feb 2019 - Jan 2022",
+						"degree": "Bsc. Computer Science",
+						"school": "Lucerne University of Applied Sciences",
+						"grade": "Grade: 5.6 / 6.0",
+						"description": "Bachelor's degree in computer science with a major in Human Computer Interaction Design."
+					},
+					{
+						"duration": "Sep 2018 - Jan 2019",
+						"degree": "Bsc. Information Systems",
+						"school": "Lucerne University of Applied Sciences",
+						"grade": "Grade: 5.7 / 6.0",
+						"description": "Change of degree program from Information Systems to Computer Science after the first semester."
+					},
+					{
+						"duration": "Aug 2016 - Jul 2017",
+						"degree": "Vocational baccalaureate",
+						"school": "Wirtschaftsschule Thun",
+						"grade": "Grade: 5.4 / 6.0",
+						"description": "The vocational baccalaureate enables the enrollment at Swiss universities of applied sciences in a specific field. For this course, the focus was placed on the field of economics."
+					},
+					{
+						"duration": "Aug 2013 - Jul 2016",
+						"degree": "Commercial apprenticeship",
+						"school": "Bildungszentrum Interlaken",
+						"grade": "Grade: 5.4 / 6.0",
+						"description": "Commercial apprenticeship in the insurance industry. In addition to practical experience, the basics of business administration and economics were taught."
+					}
+				]
+			},
+			"experience": {
+				"title": "Experience",
+				"entries": [
+					{
+						"duration": "Feb 2025 - now",
+						"title": "Lead UX Designer",
+						"employer": "finpension AG",
+						"description": "In this role, I am responsible for company-wide digital product design, redesigning the current product landscape, supporting the strategic development of the company and conceptualizing and designing financial planning features."
+					},
+					{
+						"duration": "Jul 2023 - now",
+						"title": "Entrepreneur",
+						"employer": "Roami GmbH",
+						"place": "Zurich",
+						"description": "In addition to my professional employments, I co-founded a startup with three other friends, focusing on consulting and providing services in the digital realm, along with developing digital products."
+					},
+					{
+						"duration": "Mar 2022 - Dec 2024",
+						"title": "UX / UI Designer",
+						"employer": "ti&m AG",
+						"description": "In this role, I was responsible for planning, implementing and in some cases managing various UX projects. Depending on the project, tasks in the areas of design systems, user research, conception, visual design or testing were involved."
+					},
+					{
+						"duration": "Mar 2021 - Dec 2022",
+						"title": "Research Assistant",
+						"employer": "Lucerne University of Applied Sciences",
+						"description": "In this role, I was responsible for creating and implementing concepts for future forms of teaching as a result of the Covid-19 pandemic."
+					}
+				]
+			},
+			"skills": {
+				"title": "Skills",
+				"languages": {
+					"title": "Languages",
+					"entries": [
+						{
+							"title": "German",
+							"level": 5
+						},
+						{
+							"title": "English",
+							"level": 4
+						},
+						{
+							"title": "French",
+							"level": 2
+						},
+						{
+							"title": "Spanish",
+							"level": 1
+						}
+					]
+				},
+				"ux": {
+					"title": "UX",
+					"entries": [
+						{
+							"title": "Accessibility",
+							"level": 4
+						},
+						{
+							"title": "Design-Systems",
+							"level": 5
+						},
+						{
+							"title": "Story-Telling",
+							"level": 4
+						},
+						{
+							"title": "UI-Design",
+							"level": 4
+						},
+						{
+							"title": "Usability",
+							"level": 5
+						},
+						{
+							"title": "User Research",
+							"level": 3
+						},
+						{
+							"title": "UX Writing",
+							"level": 4
+						}
+					]
+				},
+				"tools": {
+					"title": "Tools",
+					"entries": [
+						{
+							"title": "Adobe XD",
+							"level": 4
+						},
+						{
+							"title": "Adobe Illustrator",
+							"level": 3
+						},
+						{
+							"title": "Adobe Photoshop",
+							"level": 3
+						},
+						{
+							"title": "Adobe Premiere Pro",
+							"level": 3
+						},
+						{
+							"title": "Blender",
+							"level": 3
+						},
+						{
+							"title": "Confluence",
+							"level": 4
+						},
+						{
+							"title": "Flutterflow",
+							"level": 3
+						},
+						{
+							"title": "Figma",
+							"level": 5
+						},
+						{
+							"title": "Jira",
+							"level": 4
+						}
+					]
+				}
+			},
+			"leisure-time": {
+				"title": "Leisure Time",
+				"description": "While UX is undeniably a passion of mine, I believe that a fulfilling and interesting life requires a balance with engaging leisure activities. I like to spend my free time doing outdoor sports, such as ski touring, surfing, mountain biking, cycling or hiking. Additionally, I find joy in pursuing creative hobbies such as photography, drawing, illustration, and experimenting with new recipes in the kitchen. These activities not only provide me with a sense of relaxation but also fuel my creativity and inspire fresh perspectives."
+			}
+		}
+	},
+	"projects": {
+		"title": "Projects | Nico Iseli",
+		"intro": {
+			"title": "Projects",
+			"description": "This page is currently under development"
+		}
+	},
+	"mindspace": {
+		"title": "Mindspace | Nico Iseli",
+		"intro": {
+			"title": "Mindspace",
+			"description": "This page is currently under development"
+		}
+	},
+	"lab": {
+		"title": "Creative-Lab | Nico Iseli",
+		"intro": {
+			"title": "Creative-Lab",
+			"description": "This page is currently under development"
+		}
+	},
+	"footer": {
+		"personal-info": {
+			"name": "Nico Iseli",
+			"job": "UX Designer @finpension"
+		},
+		"pages": {
+			"title": "Pages",
+			"home": "Home",
+			"about": "About",
+			"projects": "Projects",
+			"mindspace": "Mindspace",
+			"lab": "Creative-Lab"
+		},
+		"profiles": {
+			"title": "Profiles",
+			"dribbble": "Dribbble",
+			"github": "GitHub",
+			"linkedin": "LinkedIn",
+			"pinterest": "Pinterest",
+			"unsplash": "Unsplash"
+		},
+		"resources": {
+			"title": "Resources",
+			"github": "GitHub",
+			"gsap": "GSAP",
+			"i18next": "i18next",
+			"svelte": "Svelte",
+			"vercel": "Vercel"
+		},
+		"copyright": "Copyright © 2025 Nico Iseli. All rights reserved."
+	},
+	"error": {
+		"title": "Page Not Found | Nico Iseli",
+		"intro": {
+			"title": "This page does not exist",
+			"description": "Feel free to open another page from the navigation"
+		}
+	}
 }

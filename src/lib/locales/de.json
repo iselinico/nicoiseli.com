@@ -9,8 +9,8 @@
 		"search": {
 			"placeholder": "Suchen",
 			"quickstart": "Schnelleinstieg",
-      "results": "Suchergebnisse",
-      "no-results": "Keine Ergebnisse gefunden"
+			"results": "Suchergebnisse",
+			"no-results": "Keine Ergebnisse gefunden"
 		}
 	},
 	"home": {
@@ -41,10 +41,174 @@
 		}
 	},
 	"about": {
-		"title": "Über mich | Nico Iseli",
+		"title": "About | Nico Iseli",
 		"intro": {
-			"title": "Über mich",
-			"description": "Diese Seite befindet sich aktuell in Entwicklung"
+			"title": "About",
+			"description": "Ich hatte schon immer eine Leidenschaft für Gestaltung. Während meines Studiums in Informatik und besonders durch meine Vertiefung in Human Computer Interaction Design fand ich schliesslich grossen Gefallen an der Thematik UX. Dabei begeistert mich vor allem das Zusammenspiel verschiedener Disziplinen wie Design, Technologie, Psychologie und Kommunikation. Deshalb habe ich mich für eine Karriere in diesem Bereich entschieden und bin hochmotiviert, die digitale Zukunft mitzugestalten.",
+			"education": {
+				"title": "Ausbildung",
+				"entries": [
+					{
+						"duration": "Feb 2019 - Jan 2022",
+						"degree": "Bsc. Informatik",
+						"school": "Hochschule Luzern",
+						"grade": "Note: 5.6 / 6.0",
+						"description": "Bachelor-Abschluss in Informatik mit Vertiefung in Human Computer Interaction Design."
+					},
+					{
+						"duration": "Sep 2018 - Jan 2019",
+						"degree": "Bsc. Wirtschaftsinformatik",
+						"school": "Hochschule Luzern",
+						"grade": "Note: 5.7 / 6.0",
+						"description": "Studiengangwechsel von Wirtschaftsinformatik zu Informatik nach dem ersten Semester."
+					},
+					{
+						"duration": "Aug 2016 - Jul 2017",
+						"degree": "Berufsmaturität",
+						"school": "Wirtschaftsschule Thun",
+						"grade": "Note: 5.4 / 6.0",
+						"description": "Die Berufsmaturität ermöglicht die Immatrikulation an Schweizer Fachhochschulen in einem spezifischen Fachbereich. Hierbei lag der Fokus auf dem Schwerpunkt Wirtschaft."
+					},
+					{
+						"duration": "Aug 2013 - Jul 2016",
+						"degree": "Kaufmännische Berufsausbildung",
+						"school": "Bildungszentrum Interlaken",
+						"grade": "Note: 5.4 / 6.0",
+						"description": "Kaufmännische Berufsausbildung zum Versicherungskaufmann. Neben den praktischen Erfahrungen wurden im Unterricht die Grundlagen der Betriebs- und Volkswirtschaftslehre vermittelt."
+					}
+				]
+			},
+			"experience": {
+				"title": "Erfahrung",
+				"entries": [
+					{
+						"duration": "Feb 2025 - jetzt",
+						"title": "Lead UX Designer",
+						"employer": "finpension AG",
+						"description": "In dieser Funktion bin ich für das unternehmensweite digitale Produktdesign sowie für die Neugestaltung der aktuellen Produktlandschaft verantwortlich. Weiter unterstütze ich die  strategische Entwicklung des Unternehmens und beschäftige mich mit der Konzeption und Gestaltung finanzplanerischer Features."
+					},
+					{
+						"duration": "Jul 2023 - jetzt",
+						"title": "Entrepreneur",
+						"employer": "Roami GmbH",
+						"description": "Neben meinen Anstellungsverhältnissen habe ich zusammen mit drei Freunden ein Startup gegründet, das sich auf die Beratung und Bereitstellung von Dienstleistungen im digitalen Bereich sowie die Entwicklung digitaler Produkte konzentriert."
+					},
+					{
+						"duration": "Mar 2022 - Dec 2024",
+						"title": "UX / UI Designer",
+						"employer": "ti&m AG",
+						"description": "In dieser Funktion war ich für die Planung, Umsetzung und teilweise für die Leitung verschiedener UX-Projekte verantwortlich. Je nach Projekt handelte es sich um Aufgaben in den Bereichen Design Systeme, User Research, Konzeption, Visual Design oder Testing."
+					},
+					{
+						"duration": "Mar 2021 - Dec 2022",
+						"title": "Research Assistant",
+						"employer": "Hochschule Luzern",
+						"description": "In dieser Funktion war ich für die Erstellung und Umsetzung von Konzepten für zukünftige Unterrichtsformen als Folge der Covid-19-Pandemie verantwortlich."
+					}
+				]
+			},
+			"skills": {
+				"title": "Skills",
+				"languages": {
+					"title": "Languages",
+					"entries": [
+						{
+							"title": "German",
+							"level": 5
+						},
+						{
+							"title": "English",
+							"level": 4
+						},
+						{
+							"title": "French",
+							"level": 2
+						},
+						{
+							"title": "Spanish",
+							"level": 1
+						}
+					]
+				},
+				"ux": {
+					"title": "UX",
+					"entries": [
+						{
+							"title": "Accessibility",
+							"level": 4
+						},
+						{
+							"title": "Design-Systems",
+							"level": 5
+						},
+						{
+							"title": "Story-Telling",
+							"level": 4
+						},
+						{
+							"title": "UI-Design",
+							"level": 4
+						},
+						{
+							"title": "Usability",
+							"level": 5
+						},
+						{
+							"title": "User Research",
+							"level": 3
+						},
+						{
+							"title": "UX Writing",
+							"level": 4
+						}
+					]
+				},
+				"tools": {
+					"title": "Tools",
+					"entries": [
+						{
+							"title": "Adobe XD",
+							"level": 4
+						},
+						{
+							"title": "Adobe Illustrator",
+							"level": 3
+						},
+						{
+							"title": "Adobe Photoshop",
+							"level": 3
+						},
+						{
+							"title": "Adobe Premiere Pro",
+							"level": 3
+						},
+						{
+							"title": "Blender",
+							"level": 3
+						},
+						{
+							"title": "Confluence",
+							"level": 4
+						},
+						{
+							"title": "Flutterflow",
+							"level": 3
+						},
+						{
+							"title": "Figma",
+							"level": 5
+						},
+						{
+							"title": "Jira",
+							"level": 4
+						}
+					]
+				}
+			},
+			"leisure-time": {
+				"title": "Leisure Time",
+				"description": "While UX is undeniably a passion of mine, I believe that a fulfilling and interesting life requires a balance with engaging leisure activities. I like to spend my free time doing outdoor sports, such as ski touring, surfing, mountain biking, cycling or hiking. Additionally, I find joy in pursuing creative hobbies such as photography, drawing, illustration, and experimenting with new recipes in the kitchen. These activities not only provide me with a sense of relaxation but also fuel my creativity and inspire fresh perspectives."
+			}
 		}
 	},
 	"projects": {
