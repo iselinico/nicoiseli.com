@@ -1,0 +1,144 @@
+/* 
+ * ========================================
+ * ABOUT
+ * ========================================
+ * This file defines the styles of the About-Pake
+ */
+
+/* ==================================================
+   DESKTOP
+================================================== */
+
+.about-intro {
+    /*Layout*/
+    display: flex;
+    flex-direction: column;
+    gap: var(--measurement-spacing-m);
+
+    .about-description {
+        /*Styling*/
+        color: var(--color-text-static-low);
+    }
+}
+
+.about-section {
+    /*Layout*/
+    display: flex;
+    gap: var(--measurement-spacing-m);
+    padding-top: var(--measurement-spacing-l);
+
+    /*Styling*/
+    border-top: 1px solid var(--color-border-static-low);
+
+    .section-title {
+        /*Sizing*/
+        flex: 1;
+    }
+
+    .section-content {
+        /*Sizing*/
+        flex: 2;
+
+        /*Layout*/
+        display: flex;
+        flex-direction: column;
+        gap: var(--measurement-spacing-l);
+
+        .entry {
+            /*Layout*/
+            display: flex;
+            gap: var(--measurement-spacing-m);
+            padding-top: var(--measurement-spacing-l);
+
+            /*Styling*/
+            border-top: 1px solid var(--color-border-static-low);
+
+            .entry-meta {
+                /*Sizing*/
+                flex: 1;
+
+                /*Layout*/
+                display: flex;
+                flex-direction: column;
+                gap: var(--measurement-spacing-s);
+
+                .duration,
+                .school,
+                .employer,
+                .grade,
+                .skill {
+                    /*Styling*/
+                    color: var(--color-text-static-low);
+                }
+            }
+
+            .entry-description {
+                /*Sizing*/
+                flex: 1;
+
+                /*Styling*/
+                color: var(--color-text-static-low);
+            }
+        }
+
+        .entry:first-child {
+            /*Layout*/
+            padding-top: var(--measurement-spacing-none);
+
+            /*Styling*/
+            border-top: none;
+        }
+
+        .skills-group {
+            /*Layout*/
+            display: flex;
+            gap: var(--measurement-spacing-s);
+        }
+    }
+}
+
+
+.skill-item {
+    /*Layout*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .skill-dots {
+        /*Layout*/
+        display: flex;
+        gap: var(--measurement-spacing-xs);
+
+        .dot {
+            /*Sizing*/
+            width: 10px;
+            height: 10px;
+
+            /*Styling*/
+            border-radius: var(--measurement-radius-full);
+            display: inline-block;
+        }
+
+        .dot.outline {
+            /*Styling*/
+            background-color: transparent;
+            border: 1px solid var(--color-border-static-medium);
+        }
+
+        .dot.filled {
+            /*Styling*/
+            background-color: var(--color-shape-static-low);
+            border: 1px solid var(--color-border-static-strong);
+        }
+    }
+}
+
+/* ==================================================
+   MOBILE
+================================================== */
+@media (max-width: 960px) {
+    .entry {
+        /*Layout*/
+        flex-direction: column;
+    }
+}
