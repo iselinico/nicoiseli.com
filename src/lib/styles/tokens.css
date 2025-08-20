@@ -55,7 +55,7 @@
   /* Shape */
   --color-shape-static-plain: var(--color-grey-950);
   --color-shape-static-low: var(--color-grey-600);
-  --color-shape-static-medium: var(--color-grey-300);
+  --color-shape-static-medium: var(--color-grey-200);
   --color-shape-static-strong: var(--color-grey-50);
 
   /* Border */
