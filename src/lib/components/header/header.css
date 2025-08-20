@@ -274,6 +274,7 @@ header {
             /*Styling*/
             border: none;
             color: var(--color-text-static-strong);
+            background-color: transparent;
 
             &:focus {
               /*Styling*/
