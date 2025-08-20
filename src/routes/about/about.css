@@ -24,7 +24,7 @@
 .about-section {
     /*Layout*/
     display: flex;
-    gap: var(--measurement-spacing-m);
+    gap: var(--measurement-spacing-l);
     padding-top: var(--measurement-spacing-l);
 
     /*Styling*/
@@ -122,12 +122,12 @@
         .dot.outline {
             /*Styling*/
             background-color: transparent;
-            border: 1px solid var(--color-border-static-medium);
+            border: 0.5px solid var(--color-border-static-strong);
         }
 
         .dot.filled {
             /*Styling*/
-            background-color: var(--color-shape-static-low);
+            background-color: var(--color-shape-static-strong);
             border: 1px solid var(--color-border-static-strong);
         }
     }
