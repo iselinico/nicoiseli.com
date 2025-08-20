@@ -6,6 +6,7 @@
 			"menu-3": "Mindspace",
 			"menu-4": "Creative-Lab"
 		},
+		"contact": "Say Hello",
 		"search": {
 			"placeholder": "Search",
 			"quickstart": "Quickstart",
@@ -44,7 +45,7 @@
 		"title": "About | Nico Iseli",
 		"intro": {
 			"title": "About",
-			"description": "I have always had a passion for creating things. During my studies in computer science, and especially through my major in Human Computer Interaction Design, a great interest in UX arose in me. What I particularly like about this area is the interplay of different disciplines such as design, technology, psychology, communication and so on. That‘s why I decided to pursue a career in this field and I am extremely motivated to help shape the digital future.",
+			"description": "I have always had a passion for creating things. During my studies in computer science, and especially through my major in Human Computer Interaction Design, a great interest in UX arose in me. What I particularly like about this area is the interplay of different disciplines such as design, technology, psychology and communication. That‘s why I decided to pursue a career in this field and I am extremely motivated to help shape the digital future.",
 			"education": {
 				"title": "Education",
 				"entries": [
