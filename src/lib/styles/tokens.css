@@ -33,7 +33,7 @@
   --color-border-static-plain: var(--color-grey-0);
   --color-border-static-low: var(--color-grey-200);
   --color-border-static-medium: var(--color-grey-400);
-  --color-border-static-strong: var(--color-grey-600);
+  --color-border-static-strong: var(--color-grey-950);
 
   /* Shadow */
   --color-shadow-static-strong: 0, 0, 0;
@@ -62,7 +62,7 @@
   --color-border-static-plain: var(--color-grey-950);
   --color-border-static-low: var(--color-grey-700);
   --color-border-static-medium: var(--color-grey-500);
-  --color-border-static-strong: var(--color-grey-300);
+  --color-border-static-strong: var(--color-grey-50);
 
   /* Shadow */
   --color-shadow-static-strong: 255, 255, 255;
