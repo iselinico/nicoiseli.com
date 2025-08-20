@@ -11,6 +11,7 @@
 	import { get } from 'svelte/store';
 	import { theme } from '$lib/stores/theme.js';
 	import { locale, _ } from 'svelte-i18n';
+	import Button from '../button/Button.svelte';
 
 	// Initialize Variables
 	let currentLocale = 'en';
@@ -107,6 +108,10 @@
 
 		<!-- Action -->
 		<div class="actions">
+
+			<!-- Contact -->
+			<!-- <Button label='{$_('header.contact')}'/> -->
+			
 			<!-- Language -->
 			<select class="detail-s locale" on:change={changeLanguage} bind:value={currentLocale} aria-label="Select Language">
 				<option class="detail-m" value="en">en</option>
