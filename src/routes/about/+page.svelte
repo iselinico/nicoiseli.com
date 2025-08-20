@@ -7,14 +7,14 @@
 
 <!--SCRIPTS-->
 <script>
-	import { _ } from 'svelte-i18n';
+	import { _, json } from 'svelte-i18n';
 
 	// Reactive translations
-	$: education = $_('about.intro.education.entries');
-	$: experience = $_('about.intro.experience.entries');
-	$: skillsLanguages = $_('about.intro.skills.languages.entries');
-	$: skillsUX = $_('about.intro.skills.ux.entries');
-	$: skillsTools = $_('about.intro.skills.tools.entries');
+	$: education = $json('about.intro.education.entries');
+	$: experience = $json('about.intro.experience.entries');
+	$: skillsLanguages = $json('about.intro.skills.languages.entries');
+	$: skillsUX = $json('about.intro.skills.ux.entries');
+	$: skillsTools = $json('about.intro.skills.tools.entries');
 </script>
 
 <svelte:head>
