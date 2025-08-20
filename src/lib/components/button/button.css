@@ -1,0 +1,37 @@
+/* 
+ * ========================================
+ * FOOTER
+ * ========================================
+ * This file defines the styles of the Footer-Component
+ */
+
+/* ==================================================
+   DESKTOP
+================================================== */
+
+#primary-button {
+    /*Sizing*/
+    width: auto;
+    height: var(--measurement-componentsize-m);
+
+    /*Layout*/
+    padding: var(--measurement-spacing-none) var(--measurement-spacing-m);
+
+    /*Styling*/
+    background-color: color-mix(in srgb, var(--color-container-static-strong) 100%, transparent);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--color-border-static-low);
+    border-radius: var(--measurement-radius-full);
+    color: var(--color-text-static-medium);
+    white-space: pre; 
+}
+
+/* Highlight stripe (für Liquid-Look) */
+button::after {}
+
+/* Hover-Effekt für mehr Tiefe */
+.button:hover {}
+
+/* ==================================================
+   MOBILE
+================================================== */
