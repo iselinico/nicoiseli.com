@@ -80,3 +80,12 @@ html {
     }
   }
 }
+
+
+/* ==================================================
+   BLOCKER FOR BACKGROUND-SCROLLS
+================================================== */
+.body-scroll-lock {
+  overflow: hidden;
+  height: 100vh; /* optional, aber gut für mobile */
+}
